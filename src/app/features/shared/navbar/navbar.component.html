@@ -1,16 +1,21 @@
-<nav class="navbar navbar-expand-lg navbar-light">
-  <a class="whiteNav navbar-brand" routerLink="main">Christopher Ivan Venegas Lizama</a>
-  <button class="navbar-toggler" type="button" (click)="toggleNavbar = !toggleNavbar" data-toggle="collapse" data-target="#navigationbar" aria-controls="navigationbar" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navigationbar" [ngbCollapse]="toggleNavbar">
-    <div class="navbar-nav">
-      <a class="blackNav navbar-brand" routerLink="main">Online Curriculum</a>
-      <li class="nav-item"><a class="nav-link" routerLink="main">Home </a></li>
-      <li class="nav-item"><a class="nav-link" routerLink="main/info">About me </a></li>
-      <li class="nav-item"><a class="nav-link" routerLink="main/experiences">Experience</a></li>
-      <li class="nav-item"><a class="nav-link" routerLink="main/certificates">Certificates</a></li>
-      <!-- <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+<nav class="fixed top-0 left-0 right-0 z-50 px-4 py-2 bg-transparent-100/60 bg-clip-padding backdrop-filter backdrop-blur-md text-white shadow-lg">
+  <div class="container flex justify-between w-full mx-30">
+    <div class="profile grid grid-flow-col grid-rows-2">
+      <div class="photo row-span-2 mr-2">
+        <img class="rounded-full w-12 h-12 object-cover" src="../../../../assets/photos/5.png" alt="">
+      </div>
+      <div class="name col-span-2 text-sm place-content-end">
+        <p>Christopher Venegas</p>
+      </div>
+      <div class="job col-span-2 text-sm place-content-start">
+        <p>FullStack Developer</p>
+      </div>
+    </div>
+    <div class="titles flex justify-between w-sm mx-5 place-items-center">
+      <a href="#" class="hover:text-gray-200 transition-colors duration-300">Inicio</a>
+      <a href="#" class="hover:text-gray-200 transition-colors duration-300">Acerca de</a>
+      <a href="#" class="hover:text-gray-200 transition-colors duration-300">Servicios</a>
+      <a href="#" class="hover:text-gray-200 transition-colors duration-300">Contacto</a>
     </div>
   </div>
 </nav>

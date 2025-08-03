@@ -1,29 +1,19 @@
 <div class="container__main">
-  <div class="container__welcome"> Bienvenido al Curriculum Online de:
-    <div class="name">
-      Christopher Venegas
-    </div>
+<div class="scroll-container">
+
+  <div class="scroll-section pt-20">
+    <app-info></app-info>
   </div>
-  <div class="container__profile">
-    <div class="container__photo animate__animated animate__fadeInUp">
-      <ngb-carousel #carousel [interval]="1000" [pauseOnHover]="pauseOnHover">
-        <ng-template ngbSlide *ngFor="let img of images; index as i">
-          <div class="picsum-img-wrapper">
-            <img [src]="img" alt="My image {{i + 1}} description">
-          </div>
-        </ng-template>
-      </ngb-carousel>
-    </div>
-    <div class="container__links">
-      <div class="links">
-        <a href="https://github.com/christophervenegas2" class="btn btn-outline-secondary" target="_blank"> <img class="icon" src="https://cdn.icon-icons.com/icons2/509/PNG/512/Github_icon-icons.com_49946.png" alt="GitHub"> My GitHub</a>
-        <a href="https://gitlab.com/christophervenegas2" class="btn btn-outline-secondary" target="_blank"> <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/GitLab_Logo.svg/1200px-GitLab_Logo.svg.png" alt="GitLab"> My GitLab</a>
-        <a href="https://profile.codersrank.io/user/christophervenegas2" class="btn btn-outline-secondary" target="_blank"> <img class="icon" src="../../../assets/icons/coderank.png" alt="CodeRank"> My CodeRank</a>
-        <a href="https://www.linkedin.com/in/christopher-ivan-venegas-lizama-688bb81b0" class="btn btn-outline-secondary" target="_blank"> <img class="icon" src="https://image.flaticon.com/icons/png/512/174/174857.png" alt="LinkedIn"> My LinkedIn</a>
-        <a href="https://www.twitch.tv/kerryreacciona" class="btn btn-outline-secondary" target="_blank"> <img class="icon" src="https://pngimg.com/uploads/twitch/twitch_PNG49.png" alt="GitHub"> My Twitch</a>
-      </div>
-    </div>
+
+  <div class="scroll-section pt-20">
+    <app-experiences></app-experiences>
   </div>
+
+  <div class="scroll-section pt-20">
+    <app-certificates></app-certificates>
+  </div>
+
+</div>
 </div>
 
 <div class="wave-container">

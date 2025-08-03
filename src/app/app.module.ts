@@ -9,13 +9,17 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './features/main/main.component';
 import { ExperiencesComponent } from './features/experiences/experiences.component';
 import { NavbarComponent } from './features/shared/navbar/navbar.component';
+import { InfoComponent } from './features/info/info.component';
+import { CertificatesComponent } from './features/certificates/certificates.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
     NavbarComponent,
-    ExperiencesComponent
+    ExperiencesComponent,
+    InfoComponent,
+    CertificatesComponent
   ],
   imports: [
     NgbCollapseModule,

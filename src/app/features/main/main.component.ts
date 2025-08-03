@@ -19,14 +19,8 @@ export class MainComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  @ViewChild('carousel', {static : true}) carousel: NgbCarousel;
 
   togglePaused() {
-    if (this.paused) {
-      this.carousel.cycle();
-    } else {
-      this.carousel.pause();
-    }
-    this.paused = !this.paused;
+
   }
 }
