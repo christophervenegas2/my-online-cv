@@ -7,26 +7,21 @@ import { NgbModule, NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainComponent } from './features/main/main.component';
-import { InfoComponent } from './features/info/info.component';
 import { ExperiencesComponent } from './features/experiences/experiences.component';
-import { CertificatesComponent } from './features/certificates/certificates.component';
 import { NavbarComponent } from './features/shared/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
-    InfoComponent,
-    ExperiencesComponent,
-    CertificatesComponent,
-    NavbarComponent
+    NavbarComponent,
+    ExperiencesComponent
   ],
   imports: [
     NgbCollapseModule,
     BrowserModule,
     AppRoutingModule,
-    NgbModule,
-    HttpClientModule
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

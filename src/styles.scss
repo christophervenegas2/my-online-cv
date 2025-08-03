@@ -1,14 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import 'bootstrap/scss/bootstrap';
 
-/* Importing Bootstrap SCSS file. */
-
-@import '~bootstrap/scss/bootstrap';
-
-/* Importing Bootstrap SCSS file. */
-
-@import '~bootstrap/scss/bootstrap';
-@import '~animate.css/animate.min';
+@import 'animate.css/animate.min';
 body {
   font-family: 'Times New Roman', Times, serif;
   background-color: #f7f7f9 !important;
